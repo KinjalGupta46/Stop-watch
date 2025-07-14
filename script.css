@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background 0.3s ease;
+}
+
+:root {
+  --bg: #f0f0f0;
+  --text: #000;
+  --card: #fff;
+  --accent: #4caf50;
+}
+
+body.dark-mode {
+  --bg: #1e1e1e;
+  --text: #fff;
+  --card: #2b2b2b;
+  --accent: #81c784;
+}
+
+.stopwatch-container {
+  background: var(--card);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 320px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.timer-display {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.controls button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 1em;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--accent);
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.controls button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.lap-history {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.lap-history ul {
+  list-style: none;
+  padding-left: 0;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.lap-history li {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.theme-toggle {
+  margin-top: 15px;
+  text-align: right;
+  font-size: 0.9em;
+}
