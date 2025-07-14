@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProTimer Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stopwatch-container">
+    <h1>ProTimer ⏱️</h1>
+    <div class="timer-display" id="timer">00:00:00.00</div>
+
+    <div class="controls">
+      <button id="startStopBtn">Start</button>
+      <button id="lapBtn" disabled>Lap</button>
+      <button id="resetBtn" disabled>Reset</button>
+    </div>
+
+    <div class="lap-history">
+      <h3>Lap Times</h3>
+      <ul id="laps"></ul>
+    </div>
+
+    <div class="theme-toggle">
+      <label>
+        <input type="checkbox" id="themeToggle"> Dark Mode
+      </label>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
